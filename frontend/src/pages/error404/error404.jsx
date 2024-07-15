@@ -1,17 +1,13 @@
-import { Link } from 'react-router-dom'
-import './pages/error404/error404.scss'
+import { NavLink } from 'react-router-dom'
+import styled from "./error404.module.scss"
 
 function Error404() {
   return (
-    <div className="error">
-      <div className="error__content">
-        <p className="error__content__number">404</p>
-        <p className="error__content__text">Oups! La page que vous demandez n'existe pas.</p>
-      </div>
-      <Link to="/" className="error__link">
-        Retourner sur le tableau de bord / page de connexion
-      </Link>
-    </div>
+   <main>
+        <h1 className={styled.error404}>404</h1>
+        <p className={styled.textError}>Oups! La page que vous demandez n'existe pas.</p>
+        <NavLink className={styled.errorLink} to="/" label="Retourner a la page d'accueil">Retourner a la page d'accueil</NavLink>
+    </main>
   )
 }
 
