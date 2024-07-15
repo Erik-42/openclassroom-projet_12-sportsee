@@ -1,0 +1,30 @@
+.error {
+  color: #ff0000;
+  margin-top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error__content {
+  text-align: center;
+}
+.error__content__number {
+  font-size: 18rem;
+  font-weight: 700;
+  margin: 10rem;
+}
+.error__content__text {
+  font-size: 2.25rem;
+  margin: 0;
+}
+.error__link {
+  color: #ff0000;
+  text-decoration: underline;
+  font-size: 1.125rem;
+  margin-top: 8rem;
+}
+.error__link:hover {
+  color: #dc2626;
+}/*# sourceMappingURL=error404.css.map */

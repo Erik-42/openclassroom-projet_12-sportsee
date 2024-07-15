@@ -33,7 +33,8 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
-[![wakatime](https://wakatime.com/badge/github/Erik-42/openclassroom-projet_11-kasa.svg)](https://wakatime.com/badge/github/Erik-42/openclassroom-projet_11-kasa)
+[![wakatime repo](https://wakatime.com/badge/github/Erik-42/openclassroom-projet_12-sportsee.svg)](https://wakatime.com/badge/github/Erik-42/openclassroom-projet_12-sportsee)
+[![wakatime projet](https://wakatime.com/badge/user/f84d00d8-fee3-4ca3-803d-3daa3c7053a5/project/5c6b2898-3dc9-431c-aeb2-d0bea2922d5c.svg)](https://wakatime.com/badge/user/f84d00d8-fee3-4ca3-803d-3daa3c7053a5/project/5c6b2898-3dc9-431c-aeb2-d0bea2922d5c)
 
 </div>
 Développez un tableau de bord d'analytics avec React
@@ -46,10 +47,9 @@ Cette page va notamment permettre à l’utilisateur de suivre le nombre de sess
 
 <p></p>
 
-Le lien Figma de la maquette.
-https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1.
+<a href=https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id0%3A1>Le lien Figma de la maquette.</a>
 
-Le kanban avec les User Stories à intégrer pour ce projet.https://www.notion.so/openclassrooms/Copy-of-Dev4U-projet-Learn-Home-6686aa4b5f44417881a4884c9af5669e
+<a href=https://www.notion.so/openclassrooms/Copy-of-Dev4U-projet-Learn-Home-6686aa4b5f44417881a4884c9af5669e>Le kanban avec les User Stories à intégrer pour ce projet.</a>
 
 Pour ce sprint, il faut que tu intègres les US de la partie TODO (le reste sera au sprint suivant).
 
@@ -84,38 +84,38 @@ penses à standardiser les données venant de l'API
 
 ## Installation:
 
-`Yarn`
+<a href=https://nodejs.org/en>NodeJS (version 12.18)</a>  
+ <a href=https://yarnpkg.com>Yarn</a>
 
-Installer les dépendances avec la commande `yarn add`
+If you are working with several versions of NodeJS, we recommend you install <a href=https://github.com/nvm-sh/nvm>nvm.</a> This tool will allow you to easily manage your NodeJS versions.
+2.2 Launching the project
 
-Démarrer le serveur avec la commande `yarn start`
+Fork the repository
+Clone it on your computer.
 
-### Dependencies
-
-    "@testing-library/jest-dom": "^5.16.5"
-    "@testing-library/react": "^13.4.0"
-    "@testing-library/user-event": "^13.5.0"
-    "react": "^18.2.0"
-    "react-dom": "^18.2.0"
-    "react-router-dom": "^6.11.1"
-    "react-scripts": "5.0.1"
-    "web-vitals": "^2.1.4"
+`yarn` command will allow you to install the dependencies.  
+ `yarn dev` command will allow you to run the micro API.
 
 ## Testez le projet
 
 ### Available Scripts
 
-In the project directory, you can run:
+In the project backend directory , you can run:
 
-### `yarn start`
+`yarn start`
+
+And
+In the project frontend directory , you can run:
+
+`npm run dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-Github: [https://erik-42.github.io/openclassroom-projet_11-kasa/](https://erik-42.github.io/openclassroom-projet_11-kasa/)
+Github: [https://erik-42.github.io/openclassroom-projet_12-sportsee/](https://erik-42.github.io/openclassroom-projet_12-sportsee/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,24 +157,24 @@ mesen.erik@gmail.com
 [github badge-url]: https://github.com/Erik-42
 [github repo-shield]: https://img.shields.io/badge/Repositories-42-blue
 [github repo-url]: https://github.com/Erik-42/Erik-42?tab=repositories
-[github repo file count (file type)-shield]: https://img.shields.io/github/directory-file-count/Erik-42/openclassroom-projet_11-kasa
-[github repo file count (file type)-url]: https://github.com/directory-file-count/Erik-42/openclassroom-projet_11-kasa
+[github repo file count (file type)-shield]: https://img.shields.io/github/directory-file-count/Erik-42/openclassroom-projet_12-sportsee
+[github repo file count (file type)-url]: https://github.com/directory-file-count/Erik-42/openclassroom-projet_12-sportsee
 [github followers-shield]: https://img.shields.io/github/followers/Erik-42
 [github followers-url]: https://github.com/followers/Erik-42
-[github all releases-shield]: https://github.com/Erik-42/openclassroom-projet_11-kasa/total
-[github all releases-url]: https://github.com/Erik-42/openclassroom-projet_11-kasa/releases
-[github repo size-shield]: https://img.shields.io/github/repo-size/Erik-42/openclassroom-projet_11-kasa
-[github repo size-url]: https://github.com/Erik-42/openclassroom-projet_11-kasa
-[contributors-shield]: https://img.shields.io/github/contributors/Erik-42/openclassroom-projet_11-kasa
-[contributors-url]: https://github.com/Erik-42/openclassroom-projet_11-kasa/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Erik-42/openclassroom-projet_11-kasa
-[forks-url]: https://github.com/Erik-42/openclassroom-projet_11-kasa/forks
+[github all releases-shield]: https://github.com/Erik-42/openclassroom-projet_12-sportsee/total
+[github all releases-url]: https://github.com/Erik-42/openclassroom-projet_12-sportsee/releases
+[github repo size-shield]: https://img.shields.io/github/repo-size/Erik-42/openclassroom-projet_12-sportsee
+[github repo size-url]: https://github.com/Erik-42/openclassroom-projet_12-sportsee
+[contributors-shield]: https://img.shields.io/github/contributors/Erik-42/openclassroom-projet_12-sportsee
+[contributors-url]: https://github.com/Erik-42/openclassroom-projet_12-sportsee/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Erik-42/openclassroom-projet_12-sportsee
+[forks-url]: https://github.com/Erik-42/openclassroom-projet_12-sportsee/forks
 [stars-shield]: https://img.shields.io/github/stars/Erik-42
 [stars-url]: https://github.com/Erik-42?tab=stars
-[issues-shield]: https://img.shields.io/github/issues-raw/Erik-42/openclassroom-projet_11-kasa
-[issues-url]: https://github.com/Erik-42/openclassroom-projet_11-kasa/issues
-[license-shield]: https://img.shields.io/github/license/Erik-42/openclassroom-projet_11-kasa
-[license-url]: https://github.com/Erik-42/openclassroom-projet_11-kasa/blob/master/LICENSE.txt
+[issues-shield]: https://img.shields.io/github/issues-raw/Erik-42/openclassroom-projet_12-sportsee
+[issues-url]: https://github.com/Erik-42/openclassroom-projet_12-sportsee/issues
+[license-shield]: https://img.shields.io/github/license/Erik-42/openclassroom-projet_12-sportsee
+[license-url]: https://github.com/Erik-42/openclassroom-projet_12-sportsee/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/erik-mesen/
 [html-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
