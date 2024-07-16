@@ -2,7 +2,7 @@ import React from 'react'
 import './chartsSession.module.scss'
 
 
-export default function chartsSession() {
+export default function chartsSession({userSession}) {
   return (
     <div>chartsSession</div>
   )

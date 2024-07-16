@@ -1,12 +1,7 @@
 import React, { } from 'react'
 import './user.module.scss'
-import { useParams } from 'react-router-dom'
-import { getData } from '../../hooks/getData';
 
-export default function user() {
-
-  const { userId } = useParams();
-  const { data: userInfos} = getData(userId);
+export default function user({userInfos}) {
 
   return (
        <section className="user">

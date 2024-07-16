@@ -4,13 +4,9 @@ import iconEnergy from '../../assets/icones/energy.svg'
 import iconChicken from '../../assets/icones/chicken.svg'
 import iconApple from '../../assets/icones/apple.svg'
 import iconBurger from '../../assets/icones/cheeseburger.svg'
-import { getData } from '../../hooks/getData';
-import { useParams } from 'react-router-dom'
 
-export default function chartsPerf() {
- const { userId } = useParams(); // Récupère userId depuis les paramètres d'URL
-  const { data: keyData } = getData(userId); // Appel de getData avec userId
-
+export default function chartsPerf({userInfos}) {
+const keyData = userInfos ? userInfos.keyData: null
   return (
     <section className='perf'>
    
