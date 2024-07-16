@@ -1,6 +1,6 @@
 import React, {} from 'react'
 import './dashboard.module.scss'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 // import axios from "axios"
 import Sidebar from '../../components/sidebar/sidebar.jsx'
 import NavBar from '../../components/navbar/navbar.jsx'
@@ -10,7 +10,7 @@ import ChartsSession from '../../components/chartsSession/chartsSession.jsx'
 import ChartsWeb from '../../components/chartsWeb/chartsWeb.jsx'
 import ChartsScore from '../../components/chartsScore/chartsScore.jsx'
 import ChartsPerf from '../../components/chartsPerf/chartsPerf.jsx'
-import { getData } from '../../hooks/getData.jsx'
+// import { getData } from '../../hooks/getData.jsx'
 
 export default function Dashboard() {
 //     const {id}=useParams()
@@ -25,16 +25,14 @@ export default function Dashboard() {
 // })
 //     },[id]
 // )
-    const { id } = useParams();
-    const { data: userInfos, loading, error } = getData(id);
+    // const { id } = useParams();
+    // const { data: userInfos} = getData(id);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
   return (
     <>
     <div className='menus'>
-        <Sidebar className='menus__sidebar'>{Sidebar}</Sidebar>
         <NavBar className='menus__navbar'>{NavBar}</NavBar>
+        <Sidebar className='menus__sidebar'>{Sidebar}</Sidebar>
     </div>    
     <div className='layout'>
             {/* <div>Dashboard user {userInfos.userInfos.firstName}</div> */}

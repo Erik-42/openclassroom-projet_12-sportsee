@@ -1,0 +1,57 @@
+.homebar {
+  background-color: #000000;
+  width: 100%;
+  height: 40px;
+}
+
+.homebar__header {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navLink::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.navLink:hover::before {
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.users__user {
+  font-size: 20px;
+}
+
+.home__logo {
+  width: 100%;
+}
+
+.test {
+  font-size: x-large;
+  background-color: yellow;
+  color: 0;
+  font-size: 100px;
+}

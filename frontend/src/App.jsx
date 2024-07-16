@@ -13,7 +13,7 @@ function App() {
 <Menu></Menu>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/dashboard/:id" element={<Dashboard></Dashboard>}></Route>
+        <Route path="/dashboard/:userId" element={<Dashboard></Dashboard>}></Route>
         <Route path='/error' element={<Error404 />} ></Route>
         <Route path="*" element={<Error404 />} />
       </Routes>
