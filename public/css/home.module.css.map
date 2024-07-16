@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["..\\..\\frontend\\src\\pages\\home\\home.module.scss"],"names":[],"mappings":"AAAA;EACI","sourcesContent":[".colonne__user{\r\n    font-size: 200px;\r\n}"]}

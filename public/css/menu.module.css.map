@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["..\\..\\frontend\\src\\components\\menu\\menu.module.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA","sourcesContent":[".logo__menu{\r\n    left: 0;\r\n    top: 0;\r\n    width: 100%;\r\n}"]}

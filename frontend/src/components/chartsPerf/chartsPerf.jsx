@@ -8,10 +8,10 @@ import iconBurger from '../../assets/icones/cheeseburger.svg'
 export default function chartsPerf() {
   return (
     <section className='perf'>
-      <p>{iconEnergy}</p>
-      <p>{iconChicken}</p>
-      <p>{iconApple}</p>
-      <p>{iconBurger}</p>
+      <img src={iconEnergy}/>
+      <img src={iconChicken}/>
+      <img src={iconApple}/>
+      <img src={iconBurger}/>
     </section>
   )
 }

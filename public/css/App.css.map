@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["..\\..\\frontend\\src\\App.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA","sourcesContent":["#root {\n  max-width: 1280px;\n  margin: 0 auto;\n  padding: 2rem;\n  text-align: center;\n}\n\n.colonne{\n  display: flex;\n  flex-direction: column;\n  padding: 10px;\n  gap: 10px;\n}"]}
