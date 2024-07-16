@@ -1,0 +1,18 @@
+.sidebar{
+display: flex;
+flex-direction: column;
+background-color: black;
+width: 50px;
+height: 100%;
+}
+
+.sidebar__link{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.sidebar__copyright{
+    bottom: 0;
+    text-align: center;
+    rotate: 90deg;
+}
