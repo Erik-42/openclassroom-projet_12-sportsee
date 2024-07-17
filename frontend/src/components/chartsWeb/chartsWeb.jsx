@@ -1,5 +1,5 @@
 import React from 'react'
-import './chartsWeb.module.scss'
+import styled from'./chartsWeb.module.scss'
 import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, RadarChart ,Radar,Legend} from 'recharts'
 
 
@@ -22,7 +22,7 @@ export default function chartsWeb({userPerformance}) {
 
   return (
 
-<RadarChart outerRadius={90} width={730} height={250} data={dataPerformance}>
+<RadarChart outerRadius={90} width={730} height={250} data={dataPerformance} className={styled.radarchart}>
   <PolarGrid />
   <PolarAngleAxis dataKey="kind" />
   <PolarRadiusAxis angle={30} domain={[0, 150]} />

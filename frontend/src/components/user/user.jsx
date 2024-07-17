@@ -1,17 +1,20 @@
 import React, { } from 'react'
-import './user.module.scss'
+import styled from'./user.module.scss'
 
 export default function user({userInfos}) {
 
   return (
-       <section className="user">
+       <section className={styled.user}>
       {userInfos ? (
         <>
-          <h1 className="user__name">Bonjour {userInfos.userInfos.firstName}</h1>
-          <p className="user__text">Félicitations ! Vous avez explosé vos objectifs hier 👏</p>
+        <div className={styled.user__h1}>
+          <p className={styled.user__h1__bonjour}>Bonjour </p>
+          <h1 className={styled.user__h1__name}> {userInfos.userInfos.firstName}</h1>
+        </div>
+        <p className={styled.user__text}>Félicitations ! Vous avez explosé vos objectifs hier 👏</p>
         </>
       ) : (
-        <p>Loading user data...</p>
+        <p className={styled.user__loading}>Loading user data...</p>
       )}
     </section>
   );

@@ -1,0 +1,19 @@
+.user{
+    font-size: 48px;
+    &__h1{
+        display: flex;
+        align-items: center;
+        &__bonjour{
+            color:#000
+        }
+        &__name{
+            color:#ff0000;
+        }   
+    }
+    &__text{
+        font-size: 18px;
+    }
+    &__loading{
+        
+    }
+}

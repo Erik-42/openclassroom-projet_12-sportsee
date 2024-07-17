@@ -1,0 +1,28 @@
+.perf{
+    display: flex;
+    flex-direction: column;
+    width: 258px;
+    height: 613px;
+    &__icone{
+        width: 258px;
+        height: 124px;
+        background-color:#FBFBFB ;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin:20px;
+        &__img{
+            background-color: #fdcccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        &__text{
+            &__info{
+
+            }
+            &__unite{
+
+            }
+        }
+    }
+}

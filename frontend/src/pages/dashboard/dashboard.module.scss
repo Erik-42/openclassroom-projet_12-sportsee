@@ -1,0 +1,32 @@
+.menus{
+
+}
+.layout{
+    position: relative;
+    left: 150px;
+    margin: 50px;
+    &__user{
+    }
+    &__chartsActivity{
+
+    }
+    &__charts{
+        display: flex;
+        margin:10px;
+
+        &__session{
+        
+        }
+        &__web{
+        margin: 10px 0 10px 0;
+        }
+        &__score{
+        
+        }
+    }
+    &__chartsPerf{
+    position: absolute;
+    right:0;
+    top:0;
+    }
+}

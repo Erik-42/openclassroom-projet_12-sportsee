@@ -1,5 +1,5 @@
 import React from 'react'
-import './chartsActivity.module.scss'
+import styled from'./chartsActivity.module.scss'
 import  {BarChart,CartesianGrid,XAxis,YAxis,Tooltip,Legend,Bar} from 'recharts'
 
 export default function chartsActivity({userActivity}) {
@@ -15,7 +15,7 @@ export default function chartsActivity({userActivity}) {
   }) :[]
   
   return (
-<BarChart width={730} height={250} data={dataActivity}>
+<BarChart width={730} height={250} data={dataActivity} className={styled.barchart}>
   <CartesianGrid strokeDasharray="3 3" vertical={false} />
   <XAxis dataKey="name" />
   <YAxis orientation='right'/>

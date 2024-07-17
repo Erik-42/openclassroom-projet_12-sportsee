@@ -22,12 +22,14 @@ const {userInfos, userActivity, userSession, userPerformance} = useGetData()
         <Sidebar className={styled.menus__sidebar}>{Sidebar}</Sidebar>
     </div>    
     <div className={styled.layout}>
-            <User className={styled.layout__user} userInfos={userInfos}></User>
-            <ChartsActivity className={styled.layout__charts} userActivity={userActivity}></ChartsActivity>
-            <ChartsSession className={styled.layout__charts} userSession={userSession}></ChartsSession>
-            <ChartsWeb className={styled.layout__charts} userPerformance={userPerformance}></ChartsWeb>
-            <ChartsScore className={styled.layout__charts} userInfos={userInfos}></ChartsScore>
-            <ChartsPerf className={styled.layout__charts} userInfos={userInfos}></ChartsPerf>
+        <User className={styled.layout__user} userInfos={userInfos}></User>
+        <ChartsActivity className={styled.layout__chartsActivity} userActivity={userActivity}></ChartsActivity>
+          <div className={styled.layout__charts}>
+              <ChartsSession className={styled.layout__charts__session} userSession={userSession}></ChartsSession>
+              <ChartsWeb className={styled.layout__charts__web} userPerformance={userPerformance}></ChartsWeb>
+              <ChartsScore className={styled.layout__charts__score} userInfos={userInfos}></ChartsScore>
+          </div>
+        <ChartsPerf className={styled.layout__chartsPerf} userInfos={userInfos}></ChartsPerf>
     </div>
     </>
   )

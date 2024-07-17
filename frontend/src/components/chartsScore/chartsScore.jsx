@@ -1,5 +1,5 @@
 import React from 'react'
-import './chartsScore.module.scss'
+import styled from'./chartsScore.module.scss'
 import  {PieChart,Pie} from 'recharts'
 
 export default function chartsScore({userInfos}) {
@@ -38,7 +38,7 @@ export default function chartsScore({userInfos}) {
 
   return (
     <>
-<PieChart width={730} height={250} data={dataUserInfos}>
+<PieChart width={730} height={250} data={dataUserInfos} className={styled.PieChart}>
   <Pie data={dataUserInfos && dataUserInfos.score} dataKey="score" nameKey="score" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
     <Pie data={data02} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
 
