@@ -13,7 +13,7 @@ import { useGetData } from '../../hooks/getData.jsx'
 export default function Dashboard() {
 
 const {userInfos, userActivity, userSession, userPerformance} = useGetData()
-console.log(userInfos, userActivity, userSession, userPerformance)
+// console.log(userInfos, userActivity, userSession, userPerformance)
 
   return (
     <>

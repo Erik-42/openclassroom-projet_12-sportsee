@@ -3,19 +3,17 @@ import './chartsActivity.module.scss'
 import  {BarChart,CartesianGrid,XAxis,YAxis,Tooltip,Legend,Bar} from 'recharts'
 
 export default function chartsActivity({userActivity}) {
-  console.log("userActivity",userActivity)
   let counter = 0
-  const dataActivity = userActivity ? userActivity.sessions.map((s)=>{
+  const dataActivity = userActivity ? userActivity.sessions.map((a)=>{
     counter ++
     return {
       name:counter,
-      kg:s.kilogram,
+      kg:a.kilogram,
       sp:0,
-      kcal:s.calories
+      kcal:a.calories
     }
   }) :[]
   
-  console.log(dataActivity)
   return (
 <BarChart width={730} height={250} data={dataActivity}>
   <CartesianGrid strokeDasharray="3 3" vertical={false} />
