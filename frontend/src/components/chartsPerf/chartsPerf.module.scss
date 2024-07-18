@@ -1,8 +1,13 @@
 .perf{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     width: 258px;
     height: 613px;
+    right: -270px;
+    top: 35px;
+    position: absolute;
     &__icone{
         width: 258px;
         height: 124px;
@@ -10,11 +15,12 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin:20px;
+        margin:10px;
         &__img{
             background-color: #fdcccc;
             padding: 10px;
             border-radius: 5px;
+            margin: 10px;
         }
         &__text{
             &__info{

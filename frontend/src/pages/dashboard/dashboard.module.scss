@@ -3,8 +3,9 @@
 }
 .layout{
     position: relative;
-    left: 150px;
-    margin: 50px;
+    left: 7rem;
+    margin: 3rem 2rem 3rem 4rem;    
+    width: 73%;
     &__user{
     }
     &__chartsActivity{
@@ -12,21 +13,21 @@
     }
     &__charts{
         display: flex;
-        margin:10px;
+        margin:20px 0;
 
         &__session{
         
         }
         &__web{
-        margin: 10px 0 10px 0;
+        margin: 0 10px;
         }
         &__score{
         
         }
     }
     &__chartsPerf{
+    right: -270px;
+    top: 35px;
     position: absolute;
-    right:0;
-    top:0;
     }
 }

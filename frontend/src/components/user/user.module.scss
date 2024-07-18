@@ -3,6 +3,8 @@
     &__h1{
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
         &__bonjour{
             color:#000
         }
@@ -11,7 +13,7 @@
         }   
     }
     &__text{
-        font-size: 18px;
+        font-size: 24px;
     }
     &__loading{
         

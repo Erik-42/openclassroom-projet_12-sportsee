@@ -10,19 +10,21 @@ export default function sidebar() {
   return (
     <>
     <nav className={styled.sidebar}>
-        <NavLink to="#" className={styled.sidebar__link}>
-            <img src={iconeMeditation} alt="Méditation"/>
-        </NavLink>
-        <NavLink to="#" className={styled.sidebar__link}>
-            <img src={iconeNatation} alt="Natation"/>
-        </NavLink>
-        <NavLink to="#" className={styled.sidebar__link}>
-            <img src={iconeVelo} alt="Vélo"/>
-        </NavLink>
-        <NavLink to="#" className={styled.sidebar__link}>
-            <img src={iconeMusculation} alt="Musculation"/>
-        </NavLink>
-         <p className={styled.sidebar__copyright}>Copyright SportSee 2020</p>
+        <div className={styled.sidebar__icones}>
+            <NavLink to="#" className={styled.sidebar__icones__link}>
+                <img src={iconeMeditation} alt="Méditation"/>
+            </NavLink>
+            <NavLink to="#" className={styled.sidebar__icones__link}>
+                <img src={iconeNatation} alt="Natation"/>
+            </NavLink>
+            <NavLink to="#" className={styled.sidebar__icones__link}>
+                <img src={iconeVelo} alt="Vélo"/>
+            </NavLink>
+            <NavLink to="#" className={styled.sidebar__icones__link}>
+                <img src={iconeMusculation} alt="Musculation"/>
+            </NavLink>
+        </div>
+        <p className={styled.sidebar__copyright}>Copyright SportSee 2020</p>
     </nav>
     </>
   )

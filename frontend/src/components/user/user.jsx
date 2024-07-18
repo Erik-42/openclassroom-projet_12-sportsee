@@ -8,7 +8,7 @@ export default function user({userInfos}) {
       {userInfos ? (
         <>
         <div className={styled.user__h1}>
-          <p className={styled.user__h1__bonjour}>Bonjour </p>
+          <h2 className={styled.user__h1__bonjour}>Bonjour </h2>
           <h1 className={styled.user__h1__name}> {userInfos.userInfos.firstName}</h1>
         </div>
         <p className={styled.user__text}>Félicitations ! Vous avez explosé vos objectifs hier 👏</p>
