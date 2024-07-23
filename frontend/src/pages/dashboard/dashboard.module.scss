@@ -8,26 +8,29 @@
     width: 73%;
     &__user{
     }
-    &__chartsActivity{
-
-    }
     &__charts{
         display: flex;
-        margin:20px 0;
+        margin:1.25rem 0;
+        gap: 1rem;
+        &__chartsActivity{
+    
+        }
+        &__square{
 
-        &__session{
-        
+            &__session{
+            
+            }
+            &__web{
+            margin: 0 0.5rem;
+            }
+            &__score{
+            
+            }
         }
-        &__web{
-        margin: 0 10px;
+        &__chartsPerf{
+        // right: -17rem;
+        // top: 2rem;
+        // position: absolute;
         }
-        &__score{
-        
-        }
-    }
-    &__chartsPerf{
-    right: -270px;
-    top: 35px;
-    position: absolute;
     }
 }

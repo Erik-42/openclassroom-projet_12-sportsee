@@ -10,7 +10,7 @@ const {
  * @param {number} id 
  */
 const getUserById = id => USER_MAIN_DATA
-    .filter(user => user.id === id)
+    .filter(user => user.userId === id)
     .shift()
 
 

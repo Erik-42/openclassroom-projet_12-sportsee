@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { UserActivitySanitized, UserAverageSessionSanitized, UserMainDataSanitized, UserPerformanceSanitized } from '../sanitized/userInfoSanitized';
 
 export function useGetData() {
-  const [userInfos, setUserInfos] = useState(null);
-  const [userActivity, setUserActivity] = useState(null);
-  const [userSession, setUserSession] = useState(null);
-  const [userPerformance, setUserPerformance] = useState(null);
+  const [userInfos, setUserInfos] = useState(new UserMainDataSanitized());
+  const [userActivity, setUserActivity] = useState(new UserActivitySanitized());
+  const [userSession, setUserSession] = useState(new UserAverageSessionSanitized());
+  const [userPerformance, setUserPerformance] = useState(new UserPerformanceSanitized());
 
  const {userId}=useParams()
 
@@ -14,7 +15,7 @@ export function useGetData() {
     async function fetchUserData() {
       try {
         const response = await axios.get(`http://localhost:3000/user/${userId}`);
-        setUserInfos(response.data.data);
+        setUserInfos(new UserMainDataSanitized(response.data.data));
       } catch (error) {
         console.error('Error de récupération des user data:', error);
       }
@@ -27,7 +28,7 @@ export function useGetData() {
     async function fetchUserData() {
       try {
         const response = await axios.get(`http://localhost:3000/user/${userId}/activity`);
-        setUserActivity(response.data.data);
+        setUserActivity(new UserActivitySanitized(response.data.data));
       } catch (error) {
         console.error('Error de récupération des user data:', error);
       }
@@ -40,7 +41,7 @@ export function useGetData() {
     async function fetchUserData() {
       try {
         const response = await axios.get(`http://localhost:3000/user/${userId}/average-sessions`);
-        setUserSession(response.data.data);
+        setUserSession(new UserAverageSessionSanitized(response.data.data));
       } catch (error) {
         console.error('Error de récupération des user data:', error);
       }
@@ -53,7 +54,7 @@ export function useGetData() {
     async function fetchUserData() {
       try {
         const response = await axios.get(`http://localhost:3000/user/${userId}/performance`);
-        setUserPerformance(response.data.data);
+        setUserPerformance(new UserPerformanceSanitized(response.data.data));
       } catch (error) {
         console.error('Error de récupération des user data:', error);
       }

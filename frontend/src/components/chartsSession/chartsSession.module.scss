@@ -1,5 +1,20 @@
 .linechart{
     background-color: #ff0000;
-    width: 258px;
-    height: 263px;
+    // width: 258px;
+    // height: 263px;
+// margin: 5px 30px 20px 5px;
+}
+.sl{
+    background-color: #fff;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    color: #000;
+  font-size: 14px;
+}
+.custom-tooltip {
+  /* Styles pour le tooltip personnalisé */
+  // background-color: rgba(0, 0, 0, 0.75);
+  // border-radius: 4px;
+  padding: 5px;
 }

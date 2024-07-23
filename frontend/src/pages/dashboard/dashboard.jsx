@@ -9,11 +9,11 @@ import ChartsWeb from '../../components/chartsWeb/chartsWeb.jsx'
 import ChartsScore from '../../components/chartsScore/chartsScore.jsx'
 import ChartsPerf from '../../components/chartsPerf/chartsPerf.jsx'
 import { useGetData } from '../../hooks/getData.jsx'
+// import { useGetData } from '../../hooks/getDataMock.jsx'
 
 export default function Dashboard() {
 
 const {userInfos, userActivity, userSession, userPerformance} = useGetData()
-// console.log(userInfos, userActivity, userSession, userPerformance)
 
   return (
     <>
@@ -23,13 +23,15 @@ const {userInfos, userActivity, userSession, userPerformance} = useGetData()
     </div>    
     <div className={styled.layout}>
         <User className={styled.layout__user} userInfos={userInfos}></User>
-        <ChartsActivity className={styled.layout__chartsActivity} userActivity={userActivity}></ChartsActivity>
         <div className={styled.layout__charts}>
-            <ChartsSession className={styled.layout__charts__session} userSession={userSession}></ChartsSession>
-            <ChartsWeb className={styled.layout__charts__web} userPerformance={userPerformance}></ChartsWeb>
-            <ChartsScore className={styled.layout__charts__score} userInfos={userInfos}></ChartsScore>
+        <ChartsActivity className={styled.layout__charts__chartsActivity} userActivity={userActivity}></ChartsActivity>
+          <div className={styled.layout__charts__square}>
+            <ChartsSession className={styled.layout__charts__square__session} userSession={userSession}></ChartsSession>
+            <ChartsWeb className={styled.layout__charts__square__web} userPerformance={userPerformance}></ChartsWeb>
+            <ChartsScore className={styled.layout__charts__square__score} userInfos={userInfos}></ChartsScore>
+          </div>
+        <ChartsPerf className={styled.layout__charts__chartsPerf} userInfos={userInfos}></ChartsPerf>
         </div>
-        <ChartsPerf className={styled.layout__chartsPerf} userInfos={userInfos}></ChartsPerf>
     </div>
     </>
   )

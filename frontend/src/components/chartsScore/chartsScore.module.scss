@@ -3,3 +3,18 @@
     width: 258px;
     height: 263px;
 }
+
+.PieChartLabelTop {
+  font-size: 24px;
+  fill: #000;
+  font-weight: bold;
+  text-anchor: end;
+  dominant-baseline: hanging;
+}
+
+.PieChartLabelCenter {
+  font-size: 24px;
+  fill: #000;
+  font-weight: bold;
+  text-anchor: middle;
+}

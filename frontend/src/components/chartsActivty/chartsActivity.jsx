@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import styled from'./chartsActivity.module.scss'
-import  {BarChart,CartesianGrid,XAxis,YAxis,Tooltip,Legend,Bar, ResponsiveContainer} from 'recharts'
+import  {BarChart,CartesianGrid,XAxis,YAxis,Tooltip,Legend,Bar, ResponsiveContainer,Label} from 'recharts'
 
 export default function chartsActivity({userActivity}) {
   let counter = 0
@@ -20,9 +20,8 @@ export default function chartsActivity({userActivity}) {
     if (active && payload && payload.length && payload[0].payload) {
       return (
         <div className={styled['custom-tooltip']}>
-          <p className={styled.name}>{`Name: ${payload[0].payload.name}`}</p>
           <p className={styled.kg}>{`kg: ${payload[0].value}`}</p>
-          <p className={styled.name}>{`sp: ${payload[1].value}`}</p>
+          <p className={styled.sp}>{`sp: ${payload[1].value}`}</p>
           <p className={styled.kcal}>{`kcal: ${payload[2].value}`}</p>
         </div>
       );
@@ -35,7 +34,6 @@ export default function chartsActivity({userActivity}) {
    payload: PropTypes.arrayOf(
      PropTypes.shape({
        payload: PropTypes.shape({
-         name: PropTypes.number,
          kg: PropTypes.number,
          sp: PropTypes.number,
          kcal: PropTypes.number,
@@ -47,18 +45,21 @@ export default function chartsActivity({userActivity}) {
 
   return (
   <ResponsiveContainer width="100%" height={320}>
-<BarChart data={dataActivity} className={styled.barchart}>
-  <CartesianGrid strokeDasharray="3 3" vertical={false} />
-  <XAxis dataKey="name" />
-  <YAxis orientation='right'/>
-   <Tooltip content={<CustomTooltip />} />
-  <Legend verticalAlign="top" height={36} align='right'>
-  <span className={styled['legend-text']}>Activité quotidienne</span>
-  </Legend>
-  <Bar dataKey="kg" fill="#000" barSize={7} />
-  <Bar dataKey="sp" fill="transparent" barSize={7} />
-  <Bar dataKey="kcal" fill="#ff0000" barSize={7} />
-</BarChart>  
-</ResponsiveContainer>
+      <BarChart data={dataActivity} className={styled.barchart}>
+        <CartesianGrid strokeDasharray="3 3" vertical={false} />
+        <XAxis dataKey="name" />
+        <YAxis orientation='right' />
+        <Tooltip content={<CustomTooltip />} />
+        <Legend verticalAlign="top" height={36} align='right' />
+        <Label
+          value="Activité quotidienne"
+          position="top"
+          className={styled['label-top']}
+        />
+        <Bar dataKey="kg" fill="#000" barSize={7} />
+        <Bar dataKey="sp" fill="transparent" barSize={2} />
+        <Bar dataKey="kcal" fill="#ff0000" barSize={7} />
+      </BarChart>
+    </ResponsiveContainer>
 )
 }
