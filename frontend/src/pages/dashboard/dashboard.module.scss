@@ -1,36 +1,39 @@
-.menus{
-
+.menus {
+  display: flex;
 }
-.layout{
-    position: relative;
-    left: 7rem;
-    margin: 3rem 2rem 3rem 4rem;    
-    width: 73%;
-    &__user{
-    }
-    &__charts{
-        display: flex;
-        margin:1.25rem 0;
-        gap: 1rem;
-        &__chartsActivity{
-    
-        }
-        &__square{
 
-            &__session{
-            
-            }
-            &__web{
-            margin: 0 0.5rem;
-            }
-            &__score{
-            
-            }
-        }
-        &__chartsPerf{
-        // right: -17rem;
-        // top: 2rem;
-        // position: absolute;
-        }
+.layout {
+  position: relative;
+  left: 7rem;
+  margin: 3rem 2rem 3rem 4rem;
+  width: 73%;
+  
+  &__user {
+    margin-bottom: 2rem;
+  }
+
+  &__charts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__Activity {
+      margin-bottom: 1.25rem;
     }
+
+    &__Square {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+
+      &__Session, &__Web, &__Score {
+        flex: 1;
+      }
+    }
+
+    &__Perf {
+      margin-top: 1.25rem;
+    }
+  }
 }

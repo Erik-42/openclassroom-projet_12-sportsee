@@ -43,8 +43,9 @@ export default function chartsScore({userInfos}) {
           <Label 
             value={`${dataUserInfos.toFixed(0)}% \n de votre objectif`} 
             position="center" 
-            className={styled.PieChartLabelCenter}
-          />
+            className={styled.PieChartLabelCenter}/>
+            <tspan x="50%" dy="-1.2em">{`${dataUserInfos.toFixed(0)}%`}</tspan>
+            <tspan x="50%" dy="1.2em">de votre objectif</tspan>
         </Pie>
       </PieChart>
     </ResponsiveContainer>

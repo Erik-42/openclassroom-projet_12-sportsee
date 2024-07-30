@@ -20,18 +20,27 @@ const {userInfos, userActivity, userSession, userPerformance} = useGetData()
     <div className={styled.menus}>
         <NavBar className={styled.menus__navbar}></NavBar>
         <Sidebar className={styled.menus__sidebar}></Sidebar>
-    </div>    
+    </div>
+
     <div className={styled.layout}>
+
         <User className={styled.layout__user} userInfos={userInfos}></User>
+
         <div className={styled.layout__charts}>
-        <ChartsActivity className={styled.layout__charts__chartsActivity} userActivity={userActivity}></ChartsActivity>
+          
+          <ChartsActivity className={styled.layout__charts__Activity} userActivity={userActivity}></ChartsActivity>
+
           <div className={styled.layout__charts__square}>
+
             <ChartsSession className={styled.layout__charts__square__session} userSession={userSession}></ChartsSession>
             <ChartsWeb className={styled.layout__charts__square__web} userPerformance={userPerformance}></ChartsWeb>
             <ChartsScore className={styled.layout__charts__square__score} userInfos={userInfos}></ChartsScore>
+
           </div>
-        <ChartsPerf className={styled.layout__charts__chartsPerf} userInfos={userInfos}></ChartsPerf>
+
+          <ChartsPerf className={styled.layout__charts__Perf} userInfos={userInfos}></ChartsPerf>
         </div>
+
     </div>
     </>
   )

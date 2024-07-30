@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from './chartsSession.module.scss';
-import { CartesianGrid, LineChart, Tooltip, XAxis, YAxis, Legend, Line, ResponsiveContainer } from 'recharts';
+import { CartesianGrid, LineChart, Tooltip, XAxis, Line, ResponsiveContainer } from 'recharts';
 import PropTypes from 'prop-types';
 
 export default function chartsSession({ userSession }) {
@@ -50,9 +50,7 @@ export default function chartsSession({ userSession }) {
         className={styled.linechart}>
         <CartesianGrid strokeDasharray="3 3" vertical={false} horizontal={false} />
         <XAxis dataKey="name" />
-        <YAxis />
         <Tooltip content={<CustomTooltip />} />
-        <Legend />
         <Line type="monotone" dataKey="sl" stroke="#fff" dot={false} />
       </LineChart>
     </ResponsiveContainer>

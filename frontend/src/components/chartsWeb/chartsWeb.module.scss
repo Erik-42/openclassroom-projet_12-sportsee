@@ -2,31 +2,15 @@
     background-color: #282D30;
     width: 258px;
     height: 263px;
-}
-/* chartsWeb.module.scss */
-
-.radarchart {
-  /* Add any additional styling for the RadarChart here */
-  /* Example: */
-  margin: 0 auto;  /* Centers the RadarChart horizontally */
-}
-
+  }
+  
 .polarGrid {
-  /* Style for the PolarGrid, if needed */
 }
 
 .polarAngleAxis {
-  /* Style for the PolarAngleAxis, if needed */
-}
-
-.polarRadiusAxis {
-  /* Style for the PolarRadiusAxis, if needed */
+  margin:2rem 0 ;
 }
 
 .radar {
-  /* Style for the Radar, if needed */
 }
 
-.legend {
-  /* Style for the Legend, if needed */
-}
