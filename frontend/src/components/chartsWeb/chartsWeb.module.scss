@@ -2,15 +2,21 @@
     background-color: #282D30;
     width: 258px;
     height: 263px;
+    border-radius: 0.5rem;
   }
   
 .polarGrid {
 }
 
 .polarAngleAxis {
-  margin:2rem 0 ;
+  text{
+
+    padding:1rem;
+  }
 }
 
 .radar {
+  fill: #ff0000;
+  stroke:"#ff0000";
 }
 

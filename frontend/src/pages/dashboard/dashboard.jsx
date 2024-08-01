@@ -28,7 +28,7 @@ const {userInfos, userActivity, userSession, userPerformance} = useGetData()
 
         <div className={styled.layout__charts}>
           
-          <ChartsActivity className={styled.layout__charts__Activity} userActivity={userActivity}></ChartsActivity>
+          <ChartsActivity className={styled.layout__charts__activity} userActivity={userActivity}></ChartsActivity>
 
           <div className={styled.layout__charts__square}>
 
@@ -38,7 +38,7 @@ const {userInfos, userActivity, userSession, userPerformance} = useGetData()
 
           </div>
 
-          <ChartsPerf className={styled.layout__charts__Perf} userInfos={userInfos}></ChartsPerf>
+          <ChartsPerf className={styled.layout__charts__perf} userInfos={userInfos}></ChartsPerf>
         </div>
 
     </div>

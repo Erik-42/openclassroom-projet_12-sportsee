@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from'./chartsScore.module.scss'
-import  {PieChart,Pie,Label, ResponsiveContainer} from 'recharts'
+import  {PieChart,Pie,Label, ResponsiveContainer,Cell} from 'recharts'
 
 export default function chartsScore({userInfos}) {
   
@@ -17,6 +17,8 @@ export default function chartsScore({userInfos}) {
       value: 100 - dataUserInfos,
     }
   ];
+
+    const COLORS = ['#ff0000', '#ffffff']; // rouge pour le score, et blanc pour le reste
 
   console.log(dataUserInfos)
   
@@ -37,15 +39,20 @@ export default function chartsScore({userInfos}) {
           innerRadius={85}  // Adjust innerRadius as needed
           outerRadius={100} // Increase this to enlarge the circle
           fill="#ff0000" 
-          startAngle={90} 
+          startAngle={200} 
           endAngle={-270}  // Adjust endAngle to ensure full circle display
         >
-          <Label 
-            value={`${dataUserInfos.toFixed(0)}% \n de votre objectif`} 
-            position="center" 
-            className={styled.PieChartLabelCenter}/>
-            <tspan x="50%" dy="-1.2em">{`${dataUserInfos.toFixed(0)}%`}</tspan>
-            <tspan x="50%" dy="1.2em">de votre objectif</tspan>
+          {pieData.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+           <Label
+            content={
+              <text x="50%" y="50%" dy={8} textAnchor="middle" className={styled.PieChartLabelCenter}>
+                {`${dataUserInfos.toFixed(0)}%`}
+                <tspan x="50%" dy="1.2em" className={styled.PieChartLabelObjective}>de votre objectif</tspan>
+              </text>
+            }
+          />
         </Pie>
       </PieChart>
     </ResponsiveContainer>

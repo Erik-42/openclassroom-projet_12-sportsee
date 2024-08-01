@@ -1,20 +1,4 @@
-// export class UserMainDataSanitized {
-//     constructor(data){
-//         this.userId = (data && data.userId)? data.userId : 0;
-//         this.userInfos={}
-//         this.userInfos.firstName=(data && data.userInfos && data.userInfos.firstName)? data.userInfos.firstName : '';
-//          this.userInfos.lastName=(data && data.userInfos && data.userInfos.lastName)? data.userInfos.lastName : '';
-//           this.userInfos.age=(data && data.userInfos && data.userInfos.age)? data.userInfos.age : 0;
-//           this.todayScore = (data && data.todayScore)? data.todayScore : 0;
-//           this.keyData={}
-//           this.keyData.calorieCount=(data && data.keyData && data.keyData.calorieCount)? data.keyData.calorieCount : '';
-//           this.keyData.proteinCount=(data && data.keyData && data.keyData.proteinCount)? data.keyData.proteinCount : '';
-//           this.keyData.carbohydrateCount=(data && data.keyData && data.keyData.carbohydrateCount)? data.keyData.carbohydrateCount : '';
-//           this.keyData.lipidCount=(data && data.keyData && data.keyData.lipidCount)? data.keyData.lipidCount : '';
-//     }
-// }
-
-export class UserMainDataSanitized {
+export class UserInfoSanitized {
     constructor(data) {
         this.userId = data?.userId || 0;
         this.userInfos = {
@@ -56,7 +40,12 @@ export class UserAverageSessionSanitized {
 export class UserPerformanceSanitized {
     constructor(data) {
         this.userId = data?.userId || 0;
-        this.kind = data?.kind || {};
+        this.kind = data?.kind || { 1: 'cardio',
+            2: 'energy',
+            3: 'endurance',
+            4: 'strength',
+            5: 'speed',
+            6: 'intensity'};
         this.data = Array.isArray(data?.data) ? data.data.map(item => ({
             value: item?.value || 0,
             kind: item?.kind || 0

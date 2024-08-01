@@ -1,8 +1,6 @@
 .linechart{
     background-color: #ff0000;
-    // width: 258px;
-    // height: 263px;
-// margin: 5px 30px 20px 5px;
+    border-radius: 0.5rem;
 }
 .sl{
     background-color: #fff;
@@ -13,8 +11,17 @@
   font-size: 14px;
 }
 .custom-tooltip {
-  /* Styles pour le tooltip personnalisé */
-  // background-color: rgba(0, 0, 0, 0.75);
-  // border-radius: 4px;
-  padding: 5px;
+   padding: 5px;
+}
+
+.x-axis {
+  .recharts-cartesian-axis-tick {
+    margin: 10rem; /* Ajouter une marge à droite et à gauche des labels */
+  }
+  line {
+    display: none;
+  }
+  text {
+    fill: #fff; 
+  }
 }

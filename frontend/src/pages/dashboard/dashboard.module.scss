@@ -17,23 +17,40 @@
     flex-direction: column;
     gap: 1rem;
 
-    &__Activity {
+    &__activity {
       margin-bottom: 1.25rem;
     }
 
-    &__Square {
+    &__square {
       display: flex;
       justify-content: space-between;
       gap: 1rem;
       margin-bottom: 1.25rem;
 
-      &__Session, &__Web, &__Score {
+      &__session, &__Web, &__Score {
         flex: 1;
       }
     }
 
-    &__Perf {
+    &__perf {
       margin-top: 1.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .layout {
+    &__charts {
+      &__perf {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 1.25rem;
+        order: 2;
+      }
+      &__square{
+        order: 1;
+      }
     }
   }
 }

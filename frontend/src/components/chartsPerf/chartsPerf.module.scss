@@ -8,6 +8,7 @@
     right: -270px;
     top: 5rem;
     position: absolute;
+    
     &__icone{
         width: 258px;
         height: 124px;
@@ -16,6 +17,7 @@
         align-items: center;
         justify-content: space-evenly;
         margin:10px;
+        border-radius: 0.5rem;
         &__img{
             background-color: #fdcccc;
             padding: 10px;
@@ -31,9 +33,9 @@
             }
         }
     }
-    @media (max-width: 600px) {
-      width: 100%;
-      max-width: 100%;
-      margin: 0;
-    }
+    // @media (max-width: 600px) {
+    //   width: 100%;
+    //   max-width: 100%;
+    //   margin: 0;
+    // }
 }

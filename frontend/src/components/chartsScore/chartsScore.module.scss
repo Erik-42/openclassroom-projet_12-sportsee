@@ -2,6 +2,7 @@
     background-color: #fbfbfb;
     width: 258px;
     height: 263px;
+    border-radius: 0.5rem;
 }
 
 .PieChartLabelTop {
@@ -16,5 +17,11 @@
   font-size: 24px;
   fill: #000;
   font-weight: bold;
+  text-anchor: middle;
+}
+.PieChartLabelObjective {
+  font-size: 16px;
+  fill: #000;
+  font-weight: normal;
   text-anchor: middle;
 }

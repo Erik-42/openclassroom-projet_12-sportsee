@@ -49,7 +49,7 @@ export default function chartsSession({ userSession }) {
         data={dataSession}
         className={styled.linechart}>
         <CartesianGrid strokeDasharray="3 3" vertical={false} horizontal={false} />
-        <XAxis dataKey="name" />
+        <XAxis dataKey="name" className={styled['x-axis']} />
         <Tooltip content={<CustomTooltip />} />
         <Line type="monotone" dataKey="sl" stroke="#fff" dot={false} />
       </LineChart>
