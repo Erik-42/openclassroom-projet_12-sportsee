@@ -14,6 +14,12 @@
    padding: 5px;
 }
 
+.LineChartLabelSession{
+  font-size: 18px;
+  fill: #fff;
+  opacity: 0.5;
+  text-anchor: start;
+}
 .x-axis {
   .recharts-cartesian-axis-tick {
     margin: 10rem; /* Ajouter une marge à droite et à gauche des labels */

@@ -18,29 +18,28 @@ export default function chartsScore({userInfos}) {
     }
   ];
 
-    const COLORS = ['#ff0000', '#ffffff']; // rouge pour le score, et blanc pour le reste
+    const COLORS = ['#ff0000', '#fff']; // rouge pour le score, et blanc pour le reste
 
   console.log(dataUserInfos)
   
   return (
       <ResponsiveContainer width="100%" height={320}>
       <PieChart width={730} height={250} className={styled.PieChart}>
-        <Label 
-          value='Score' 
-          position='top' 
-          className={styled.PieChartLabelTop}
-        />
+              <text x="50" y="50" className={styled.PieChartLabelScore}>
+                Score
+              </text>
+            
         <Pie 
           data={pieData} 
           dataKey="value" 
           nameKey="name" 
           cx="50%" 
           cy="50%" 
-          innerRadius={85}  // Adjust innerRadius as needed
-          outerRadius={100} // Increase this to enlarge the circle
+          innerRadius={85}  
+          outerRadius={100} 
           fill="#ff0000" 
           startAngle={200} 
-          endAngle={-270}  // Adjust endAngle to ensure full circle display
+          endAngle={-270}  
         >
           {pieData.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

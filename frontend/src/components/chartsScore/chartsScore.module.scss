@@ -5,12 +5,11 @@
     border-radius: 0.5rem;
 }
 
-.PieChartLabelTop {
-  font-size: 24px;
+.PieChartLabelScore {
+  font-size: 18px;
   fill: #000;
   font-weight: bold;
-  text-anchor: end;
-  dominant-baseline: hanging;
+  text-anchor: start;
 }
 
 .PieChartLabelCenter {

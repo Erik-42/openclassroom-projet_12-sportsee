@@ -43,14 +43,23 @@ export default function chartsActivity({userActivity}) {
    ),
  };
 
+   const legendFormatter = (value) => {
+            if (value === 'kg') return 'Poids (kg)';
+            if (value === 'kcal') return <span style={{color: 'black'}}>Calories brulées (kCal)</span>;
+            return value;
+          }
+  
   return (
   <ResponsiveContainer width="100%" height={320}>
       <BarChart data={dataActivity} className={styled.barchart}>
+         <text x="50" y="50" className={styled.BarChartLabelActivity}>
+            Activités quotidienne</text>
         <CartesianGrid strokeDasharray="3 3" vertical={false} />
         <XAxis dataKey="name" />
         <YAxis orientation='right' />
         <Tooltip content={<CustomTooltip />} />
-        <Legend verticalAlign="top" height={36} align='right' />
+        <Legend verticalAlign="top" height={36} align='right' formatter={legendFormatter}
+          />
         <Label
           value="Activité quotidienne"
           position="top"

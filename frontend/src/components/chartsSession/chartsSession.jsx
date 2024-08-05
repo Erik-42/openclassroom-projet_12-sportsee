@@ -48,6 +48,10 @@ export default function chartsSession({ userSession }) {
         height={263} 
         data={dataSession}
         className={styled.linechart}>
+          <text x="50" y="50" className={styled.LineChartLabelSession}>
+            Durée moyenne des</text>
+          <text x="50" y="75" className={styled.LineChartLabelSession}>
+            sessions</text>
         <CartesianGrid strokeDasharray="3 3" vertical={false} horizontal={false} />
         <XAxis dataKey="name" className={styled['x-axis']} />
         <Tooltip content={<CustomTooltip />} />
