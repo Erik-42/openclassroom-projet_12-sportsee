@@ -4,12 +4,11 @@ import iconEnergy from '../../assets/icones/energy.svg'
 import iconChicken from '../../assets/icones/chicken.svg'
 import iconApple from '../../assets/icones/apple.svg'
 import iconBurger from '../../assets/icones/cheeseburger.svg'
-import { ResponsiveContainer } from 'recharts'
+// import { ResponsiveContainer } from 'recharts'
 
 export default function chartsPerf({userInfos}) {
 const keyData = userInfos ? userInfos.keyData: null
   return (
-       <ResponsiveContainer width="100%" height="100%">
       <section className={styled.perf}>
         <div className={styled.perf__icone}>
           <img src={iconEnergy} alt='Icone Energie' className={styled.perf__icone__img} />
@@ -40,6 +39,5 @@ const keyData = userInfos ? userInfos.keyData: null
           </div>
         </div>
       </section>
-    </ResponsiveContainer>
   )
 }

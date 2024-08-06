@@ -5,8 +5,6 @@ import { PolarAngleAxis, PolarGrid, RadarChart ,Radar, ResponsiveContainer} from
 
 export default function chartsWeb({userPerformance}) {
   
-    console.log("userPerformance",userPerformance)
-
     const dico ={cardio:"Cardio",energy:"Energie", endurance:"Endurance", strength:"Force",speed:"Vitesse", intensity:"intensité" }
 
   const dataPerformance = userPerformance ? userPerformance.data.map((p)=>{
@@ -16,8 +14,6 @@ export default function chartsWeb({userPerformance}) {
     }
   }) :[]
   
-    console.log(dataPerformance)
-
   return (
     <ResponsiveContainer width="100%" height={320}>
       <RadarChart outerRadius={90} width={730} height={250} data={dataPerformance} className={styled.radarchart}>

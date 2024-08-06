@@ -4,8 +4,6 @@ import  {PieChart,Pie,Label, ResponsiveContainer,Cell} from 'recharts'
 
 export default function chartsScore({userInfos}) {
   
-  console.log("userInfos",userInfos)
-
   const dataUserInfos = userInfos ? userInfos.todayScore*100 : 0
   const pieData = [
     {
@@ -20,8 +18,6 @@ export default function chartsScore({userInfos}) {
 
     const COLORS = ['#ff0000', '#fff']; // rouge pour le score, et blanc pour le reste
 
-  console.log(dataUserInfos)
-  
   return (
       <ResponsiveContainer width="100%" height={320}>
       <PieChart width={730} height={250} className={styled.PieChart}>

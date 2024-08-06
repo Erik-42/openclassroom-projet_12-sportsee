@@ -8,7 +8,7 @@
 <div align="center">
   <h1>SportSee</h1>
   <a href="https://github.com/Erik-42">
-    <img src="./assets/img/logo/logo.png" alt="Logo Kasa" width="200" height="70">
+    <img src="./frontend/src/assets/logo/logo.png" alt="Logo SportSee" width="300" height="100">
   </a>
 </div>
 
@@ -87,14 +87,27 @@ penses à standardiser les données venant de l'API
 <a href=https://nodejs.org/en>NodeJS (version 12.18)</a>  
  <a href=https://yarnpkg.com>Yarn</a>
 
+### Dependencies: 
+    "axios": "^1.7.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
+    "recharts": "^2.12.7"
+
 If you are working with several versions of NodeJS, we recommend you install <a href=https://github.com/nvm-sh/nvm>nvm.</a> This tool will allow you to easily manage your NodeJS versions.
 2.2 Launching the project
 
 Fork the repository
 Clone it on your computer.
 
+### Backend
+
 `yarn` command will allow you to install the dependencies.  
- `yarn dev` command will allow you to run the micro API.
+ 
+ ### Frontend
+
+`npm` command wil allow you to install the depencies.
 
 ## Testez le projet
 

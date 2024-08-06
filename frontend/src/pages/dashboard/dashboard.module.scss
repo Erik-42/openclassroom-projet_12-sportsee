@@ -32,25 +32,26 @@
       }
     }
 
-    &__perf {
-      margin-top: 1.25rem;
-    }
+  }
+  &__perf {
+    margin-top: 1.25rem;
   }
 }
 
 @media screen and (max-width: 1400px) {
   .layout {
     &__charts {
-      &__perf {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin-top: 1.25rem;
-        order: 2;
-      }
       &__square{
         order: 1;
       }
+    }
+    &__perf {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 1.25rem;
+      order: 2;
+      position: relative;
     }
   }
 }

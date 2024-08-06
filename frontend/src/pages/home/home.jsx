@@ -3,7 +3,6 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styled from './home.module.scss';
 
-// Importing images to ensure correct path resolution
 import mainImage from '../../assets/images/img-accueil.jpg';
 import logoImage from '../../assets/logo/logo.png';
 

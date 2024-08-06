@@ -4,7 +4,6 @@ import { CartesianGrid, LineChart, Tooltip, XAxis, Line, ResponsiveContainer } f
 import PropTypes from 'prop-types';
 
 export default function chartsSession({ userSession }) {
-  console.log("userSession", userSession);
 
   const daysOfWeek = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
   const dataSession = userSession ? userSession.sessions.map((session, index) => {
@@ -14,8 +13,6 @@ export default function chartsSession({ userSession }) {
       sl: session.sessionLength
     };
   }) : [];
-
-  console.log(dataSession);
 
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
