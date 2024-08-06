@@ -1,6 +1,9 @@
 .linechart{
     background-color: #ff0000;
     border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    // margin:25px 20px 20px 10px
 }
 .sl{
     background-color: #fff;
@@ -21,13 +24,17 @@
   text-anchor: start;
 }
 .x-axis {
-  .recharts-cartesian-axis-tick {
-    margin: 10rem;
-  }
   line {
     display: none;
   }
   text {
-    fill: #fff; 
+    fill: #fff;
+    padding:4rem; 
   }
+  .tick {
+    font-size: 14;
+  }
+}
+.y-axis{
+
 }

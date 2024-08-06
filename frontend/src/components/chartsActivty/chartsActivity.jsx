@@ -49,14 +49,17 @@ export default function chartsActivity({userActivity}) {
             return value;
           }
   
+const yAxisTick ={ fontSize:14, transform:'translate(10,0)'}
+const xAxisTick ={ fontSize:14, transform:'translate(0,10)'}
+
   return (
   <ResponsiveContainer width="100%" height={320}>
       <BarChart data={dataActivity} className={styled.barchart}>
-         <text x="50" y="50" className={styled.BarChartLabelActivity}>
+         <text x="50" y="20" className={styled.BarChartLabelActivity}>
             Activités quotidienne</text>
         <CartesianGrid strokeDasharray="3 3" vertical={false} />
-        <XAxis dataKey="name" />
-        <YAxis orientation='right' />
+        <XAxis dataKey="name" axisLine={false} tick={xAxisTick}/>
+        <YAxis orientation='right' axisLine={false} tick={yAxisTick}/>
         <Tooltip content={<CustomTooltip />} />
         <Legend verticalAlign="top" height={36} align='right' formatter={legendFormatter}
           />

@@ -20,21 +20,21 @@ const keyData = userInfos ? userInfos.keyData: null
         <div className={styled.perf__icone}>
           <img src={iconChicken} alt='Icone Poulet' className={styled.perf__icone__img} />
           <div className={styled.perf__icone__text}>
-            <h3 className={styled.perf__icone__text__info}>{keyData && keyData.proteinCount}kCal</h3>
+            <h3 className={styled.perf__icone__text__info}>{keyData && keyData.proteinCount}g</h3>
             <p className={styled.perf__icone__text__unite}>Proteines</p>
           </div>
         </div>
         <div className={styled.perf__icone}>
           <img src={iconApple} alt='Icone Pomme' className={styled.perf__icone__img} />
           <div className={styled.perf__icone__text}>
-            <h3 className={styled.perf__icone__text__info}>{keyData && keyData.carbohydrateCount}kCal</h3>
+            <h3 className={styled.perf__icone__text__info}>{keyData && keyData.carbohydrateCount}g</h3>
             <p className={styled.perf__icone__text__unite}>Glucides</p>
           </div>
         </div>
         <div className={styled.perf__icone}>
           <img src={iconBurger} alt='Icone Burger' className={styled.perf__icone__img} />
           <div className={styled.perf__icone__text}>
-            <h3 className={styled.perf__icone__text__info}>{keyData && keyData.lipidCount}kCal</h3>
+            <h3 className={styled.perf__icone__text__info}>{keyData && keyData.lipidCount}g</h3>
             <p className={styled.perf__icone__text__unite}>Lipides</p>
           </div>
         </div>
