@@ -9,14 +9,15 @@
 }
 
 .polarAngleAxis {
-  text{
-
-    padding:1rem;
-  }
+  
 }
 
 .radar {
   fill: #ff0000;
   stroke:"#ff0000";
 }
-
+@media screen and (max-width: 1400px) {
+  .radarchart{
+    outerRadius:90;
+  }
+}
