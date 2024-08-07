@@ -8,7 +8,7 @@
   right: -270px;
   top: 9.1rem;
   position: absolute;
-
+  margin: 0 -2rem;
   &__icone {
     width: 258px;
     height: 124px;
@@ -37,14 +37,12 @@
   .perf {
     display: flex;
     flex-direction: row;
-    width: 100%;
     margin-top: 1rem;
-    order: 2;
     position: relative;
     top: 0;
     right: 0;
-    width: 102%;
+    width: 109%;
     height: 6rem;
-    left: -10px;
+    left: -1.5rem;
   }
 }
