@@ -3,6 +3,9 @@ import styled from'./chartsWeb.module.scss'
 import { PolarAngleAxis, PolarGrid, RadarChart ,Radar, ResponsiveContainer} from 'recharts'
 
 const getOuterRadius = () => {
+  if (window.innerWidth <= 1150) {
+    return 40; 
+  }
   if (window.innerWidth <= 1400) {
     return 60; 
   }

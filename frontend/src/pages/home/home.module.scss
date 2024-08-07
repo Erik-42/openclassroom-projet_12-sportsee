@@ -3,32 +3,33 @@
   width: 100%;
   height: 6rem;
   display: flex;
-    align-items: center;
-    justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   &__logo {
     width: auto;
     height: 6rem;
-    margin: 0 2rem 0 2rem
+    margin: 0 2rem 0 2rem;
   }
-  &__inscrire, &__connexion{
-        font-size: xx-large;
-        color: white;
+  &__inscrire,
+  &__connexion {
+    font-size: xx-large;
+    color: white;
   }
 }
 
 .users {
-   display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin :1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem;
   &__user {
     font-size: xxx-large;
     color: brown;
     font-weight: 900;
     position: relative;
-    margin: 0 10rem
+    margin: 0 10rem;
   }
-   &__user::before {
+  &__user::before {
     content: "";
     position: absolute;
     background: rgb(141, 27, 27);
@@ -39,19 +40,19 @@
     transform: scale(0);
     transition: transform 0.4s;
   }
-  
+
   &__user:hover::before {
     transform-origin: 0 0;
     transform: scale(1);
   }
 }
-.mainImage{
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    top: -13rem;
+.mainImage {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -13rem;
 }
 
 ::-webkit-scrollbar {
-display: none;
+  display: none;
 }

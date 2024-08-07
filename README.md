@@ -84,8 +84,9 @@ penses à standardiser les données venant de l'API
 
 ## Installation:
 
-<a href=https://nodejs.org/en>NodeJS (version 12.18)</a>  
+<a href=https://nodejs.org>NodeJS</a>  
  <a href=https://yarnpkg.com>Yarn</a>
+ <a href=https://npmjs.com>Npm</a>
 
 ### Dependencies: 
     "axios": "^1.7.2",

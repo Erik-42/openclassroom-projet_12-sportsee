@@ -6,7 +6,7 @@ import logo from './../../assets/logo/logo.png'
 export default function navbar() {
   return (
     <nav className={styled.navbar}>
-        <img src={logo} className={styled.navbar__logo}/>
+        <img src={logo} className={styled.navbar__logo} alt="Logo SportSee"/>
         <div className={styled.navbar__header}>
           <NavLink to='/' className={styled.navbar__header__text}>Accueil</NavLink>
           <NavLink to='#' className={styled.navbar__header__text}>Profil</NavLink>

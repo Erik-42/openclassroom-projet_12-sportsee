@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "svipas.prettier-plus",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "svipas.prettier-plus"
+  }
+}

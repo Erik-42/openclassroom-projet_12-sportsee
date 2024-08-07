@@ -1,23 +1,22 @@
-.linechart{
-    background-color: #ff0000;
-    border-radius: 0.5rem;
-    width: 100%;
-    height: 100%;
-    // margin:25px 20px 20px 10px
+.linechart {
+  background-color: #ff0000;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
 }
-.sl{
-    background-color: #fff;
-    font-weight: 700;
-    padding: 1rem;
-    border-radius: 0.25rem;
-    color: #000;
+.sl {
+  background-color: #fff;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  color: #000;
   font-size: 14px;
 }
 .custom-tooltip {
-   padding: 5px;
+  padding: 5px;
 }
 
-.LineChartLabelSession{
+.LineChartLabelSession {
   font-size: 18px;
   fill: #fff;
   opacity: 0.5;
@@ -29,12 +28,11 @@
   }
   text {
     fill: #fff;
-    padding:4rem; 
+    padding: 4rem;
   }
   .tick {
     font-size: 14;
   }
 }
-.y-axis{
-
+.y-axis {
 }

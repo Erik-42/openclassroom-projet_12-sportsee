@@ -3,7 +3,7 @@ import { BrowserRouter, Routes,Route } from 'react-router-dom'
 import Home from './pages/home/home.jsx'
 import Dashboard from './pages/dashboard/dashboard.jsx'
 import Error404 from './pages/error404/error404.jsx'
-import styled from'./App.module.scss'
+import './App.module.scss'
 
 function App() {
   return (

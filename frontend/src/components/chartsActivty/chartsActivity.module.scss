@@ -1,16 +1,16 @@
-.barchart{
-    background-color: #fbfbfb ;
-    width: 100%;
-    height: 100%;
-   border-radius: 0.5rem;
-  }
-  .BarChartLabelActivity{
-    font-size: 18px;
-    fill: #000;
-    font-weight: bold;
+.barchart {
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.BarChartLabelActivity {
+  font-size: 18px;
+  fill: #000;
+  font-weight: bold;
 
- text-anchor: start;
-  }
+  text-anchor: start;
+}
 .custom-tooltip {
   background-color: #ff0000;
   border-color: #ff0000;
@@ -22,10 +22,10 @@
     font-weight: bold;
   }
 
-  p.kg, p.kcal {
+  p.kg,
+  p.kcal {
     color: #fff;
   }
-  
 }
 
 .text-container {
@@ -38,9 +38,9 @@
   font-size: 14px;
   color: #666666;
 }
-.legend-text{
-    color:black;
-    font-size: 18px;
+.legend-text {
+  color: black;
+  font-size: 18px;
 }
 .kg {
   color: #000;

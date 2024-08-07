@@ -16,12 +16,12 @@
 
   --primaryBgColor: #fff;
   --primaryFontColor: black;
-  --secondaryBgColor: #282D30;
+  --secondaryBgColor: #282d30;
   --secondaryFontColor: #fff;
   --tertiaryBgColor: #ff0000;
-  --tertiaryFontColor: #74798C;
-  --menuBgColor:#000;
-  --chartsBgColor:#fbfbfb;
+  --tertiaryFontColor: #74798c;
+  --menuBgColor: #000;
+  --chartsBgColor: #fbfbfb;
 }
 
 .roboto-regular {
@@ -39,4 +39,3 @@
 body {
   background-color: var(--primaryBgColor);
 }
-

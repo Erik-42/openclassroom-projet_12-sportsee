@@ -7,6 +7,7 @@ const handleNoUserData = (res, userData) => {
     return res.json({data: userData})
 }
 
+// eslint-disable-next-line no-undef
 module.exports = {
     handleNoUserData
 }

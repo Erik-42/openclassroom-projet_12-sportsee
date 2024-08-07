@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const {
     USER_MAIN_DATA,
     USER_ACTIVITY,

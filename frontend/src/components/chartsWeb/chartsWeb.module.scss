@@ -1,23 +1,17 @@
-.radarchart{
-    background-color: #282D30;
-    width: 258px;
-    height: 263px;
-    border-radius: 0.5rem;
-  }
-  
+.radarchart {
+  background-color: #282d30;
+  width: 258px;
+  height: 263px;
+  border-radius: 0.5rem;
+}
+
 .polarGrid {
 }
 
 .polarAngleAxis {
-  
 }
 
 .radar {
   fill: #ff0000;
-  stroke:"#ff0000";
-}
-@media screen and (max-width: 1400px) {
-  .radarchart{
-    outerRadius:90;
-  }
+  stroke: "#ff0000";
 }
